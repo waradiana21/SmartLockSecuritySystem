@@ -51,26 +51,26 @@ Adafruit_Fingerprint finger(&mySerial);
 #define RECORD_START 1
 
 // ==================== FIREBASE CONFIG ====================
-#define FIREBASE_URL    "https://smart-lock-system-60262-default-rtdb.asia-southeast1.firebasedatabase.app/"
-#define FIREBASE_AUTH   "z2C4gDGbwxk82ObL0BRok8pFqHmijmKUMqvCaAZI"
+#define FIREBASE_URL    ""
+#define FIREBASE_AUTH   ""
 #define NODE_LOG        "log"
 #define NODE_USERS      "users"
 #define NODE_DOOR_STS   "door_status"
 
 // ==================== TELEGRAM CONFIG ====================
-#define BOT_TOKEN_ADMIN "8419291391:AAFqxD-k1n9-TMleOZVKR1a2BXbFN0mMzCE"
-#define BOT_TOKEN_LOG   "7893459259:AAGAwjOYaLDlPb6yiS51q9kmNX53cti5yHk"
-#define CHAT_ID         "8385631359"
+#define BOT_TOKEN_ADMIN ""
+#define BOT_TOKEN_LOG   ""
+#define CHAT_ID         ""
 
 WiFiClientSecure client;
 UniversalTelegramBot botAdmin(BOT_TOKEN_ADMIN, client);
 UniversalTelegramBot botLog(BOT_TOKEN_LOG, client);
 
 // ==================== MQTT CONFIG ====================
-const char* mqtt_server = "0c82a64bb24146519d9b6df720d08792.s1.eu.hivemq.cloud";
-const int   mqtt_port   = 8883;
-const char* mqtt_user   = "SmartLockSystem";
-const char* mqtt_pass   = "2FactorAuthentication";
+const char* mqtt_server = "";
+const int   mqtt_port   = ;
+const char* mqtt_user   = "";
+const char* mqtt_pass   = "";
 
 WiFiClientSecure mqttSecureClient;
 PubSubClient mqttClient(mqttSecureClient);
