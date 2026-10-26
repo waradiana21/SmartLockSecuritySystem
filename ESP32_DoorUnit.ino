@@ -21,10 +21,10 @@
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // ==================== MQTT CONFIG ====================
-const char* mqtt_server ="0c82a64bb24146519d9b6df720d08792.s1.eu.hivemq.cloud";
-const int mqtt_port     = 8883;
-const char* mqtt_user   = "SmartLockSystem";
-const char* mqtt_pass   = "2FactorAuthentication";
+const char* mqtt_server ="";
+const int mqtt_port     = ;
+const char* mqtt_user   = "";
+const char* mqtt_pass   = "";
 
 WiFiClientSecure mqttSecureClient;
 PubSubClient mqttClient(mqttSecureClient);
