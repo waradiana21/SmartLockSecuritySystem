@@ -20,10 +20,10 @@
 #include "camera_pins.h"
 
 // ==================== MQTT CONFIG ====================
-const char* mqtt_server ="0c82a64bb24146519d9b6df720d08792.s1.eu.hivemq.cloud";
+const char* mqtt_server ="";
 const int mqtt_port     = 8883;
-const char* mqtt_user   = "SmartLockSystem";
-const char* mqtt_pass   = "2FactorAuthentication";
+const char* mqtt_user   = "";
+const char* mqtt_pass   = "";
 
 WiFiClientSecure mqttSecureClient;
 PubSubClient mqttClient(mqttSecureClient);
